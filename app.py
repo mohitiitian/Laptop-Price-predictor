@@ -6,7 +6,7 @@ from forms import Inputform;
 app = Flask(__name__)
 
 app.config["SECRET_KEY"]="secret_key"
-with open('D:\laptop-price\Laptop-Price-predictor\pipe3.pkl', 'rb') as file:
+with open('pipe3.pkl', 'rb') as file:
   model = pickle.load(file)
 
 
