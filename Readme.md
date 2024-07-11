@@ -2,6 +2,8 @@
 
 This project involves analyzing a dataset of laptop prices and specifications from various companies. The goal is to predict the price of a laptop based on its specifications using machine learning models.
 
+You can find the deployed website through this link: [Laptop Price Predictor](https://laptop-price-predictor-6-fztn.onrender.com/).
+
 ## Project Description
 
 ### Exploratory Data Analysis (EDA)
@@ -58,3 +60,13 @@ This project involves analyzing a dataset of laptop prices and specifications fr
 - **Performance Comparison**:
     - XGBoost outperformed Linear Regression, providing a better fit for the data with higher accuracy and lower error rates.
     - This indicates that XGBoost is more suitable for this dataset due to its ability to handle complex relationships between features.
+
+### Deployment
+
+- **Framework and Tools**:
+    - The model is deployed using Flask for the backend web server.
+    - Render is used as the hosting platform.
+    - WTForms is utilized for handling form submissions.
+    - Jinja templates are employed for rendering HTML with dynamic content.
+
+This project showcases the entire pipeline from data analysis and model building to deployment, demonstrating the practical application of machine learning in predicting laptop prices based on specifications.
