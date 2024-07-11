@@ -1,0 +1,149 @@
+/* Base Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text color */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header Styles */
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #e8491d 3px solid;
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+}
+
+header li {
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding {
+    float: left;
+}
+
+header #branding h1 {
+    margin: 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header .highlight, header .current a {
+    color: #e8491d;
+    font-weight: bold;
+}
+
+/* Home Page Styles */
+.home-page {
+    text-align: center;
+    padding: 50px 0;
+    color: #ffffff; /* Ensure text is visible on black background */
+    height: 100vh;
+}
+
+.home-page h1 {
+    font-size: 50px;
+    margin: 20px 0;
+}
+
+.home-page p {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    background-color: #007bff; /* Blue background */
+    color: #ffffff; /* White text */
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ffffff; /* White background on hover */
+    color: #007bff; /* Blue text on hover */
+}
+
+/* Predict Page Styles */
+.predict-page {
+    background-color: #1a1a1a; /* Dark gray background for form */
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    margin: 50px 0;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="checkbox"],
+form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    background: #333333; /* Dark background for input fields */
+    color: #ffffff; /* White text color for input fields */
+}
+
+form input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background: #35424a;
+    color: #ffffff;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+form input[type="submit"]:hover {
+    background: #e8491d;
+}
+
+/* Footer Styles */
+footer {
+    background: #800000; /* Reddish tinge */
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 20px;
+}
