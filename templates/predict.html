@@ -1,0 +1,135 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<form action="" method="post">
+    {{ form.hidden_tag() }}
+    <div class="form-group">
+        {{ form.Company.label }}
+        {{ form.Company }}
+        {% if form.Company.errors %}
+            {% for error in form.Company.errors %}
+                <div>{{ error }}</div>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <br>
+    <div class="form-group">
+        {{ form.TypeName.label }}
+        {{ form.TypeName }}
+        {% if form.TypeName.errors %}
+            {% for error in form.TypeName.errors %}
+                <div>{{ error }}</div>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <br>
+    <div class="form-group">
+        {{ form.Ram.label }}
+        {{ form.Ram }}
+        {% if form.Ram.errors %}
+            {% for error in form.Ram.errors %}
+                <div>{{ error }}</div>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <br>
+    <div class="form-group">
+        {{ form.Weight.label }}
+        {{ form.Weight }}
+        {% if form.Weight.errors %}
+            {% for error in form.Weight.errors %}
+                <div>{{ error }}</div>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <br>
+    <div class="form-group">
+        {{ form.Touchscreen.label }}
+        {{ form.Touchscreen }}
+        {% if form.Touchscreen.errors %}
+            {% for error in form.Touchscreen.errors %}
+                <div>{{ error }}</div>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <br>
+    <div class="form-group">
+        {{ form.IPS_Panel.label }}
+        {{ form.IPS_Panel }}
+        {% if form.IPS_Panel.errors %}
+            {% for error in form.IPS_Panel.errors %}
+                <div>{{ error }}</div>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <br>
+    <div class="form-group">
+        {{ form.ppi.label }}
+        {{ form.ppi }}
+        {% if form.ppi.errors %}
+            {% for error in form.ppi.errors %}
+                <div>{{ error }}</div>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <br>
+    <div class="form-group">
+        {{ form.Brand.label }}
+        {{ form.Brand }}
+        {% if form.Brand.errors %}
+            {% for error in form.Brand.errors %}
+                <div>{{ error }}</div>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <br>
+    <div class="form-group">
+        {{ form.HDD.label }}
+        {{ form.HDD }}
+        {% if form.HDD.errors %}
+            {% for error in form.HDD.errors %}
+                <div>{{ error }}</div>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <br>
+    <div class="form-group"> 
+        {{ form.SSD.label }}
+        {{ form.SSD }}
+        {% if form.SSD.errors %}
+            {% for error in form.SSD.errors %}
+                <div>{{ error }}</div>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <br>
+    <div class="form-group">
+        {{ form.gpu.label }}
+        {{ form.gpu }}
+        {% if form.gpu.errors %}
+            {% for error in form.gpu.errors %}
+                <div>{{ error }}</div>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <br>
+    <div class="form-group">
+        {{ form.ops.label }}
+        {{ form.ops }}
+        {% if form.ops.errors %}
+            {% for error in form.ops.errors %}
+                <div>{{ error }}</div>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <br>
+    <div class="form-group">{{ form.submit() }}</div>
+    <br>
+    <div>
+        <h2>{{ output }}</h2> 
+    </div>
+    <div>
+        <p>Redirect to Homepage? <a href="{{ url_for('home') }}" class = "btn">Home</a></p>
+    </div>
+</form>
+{% endblock content %}
