@@ -40,7 +40,7 @@ You can find the deployed website through this link: [Laptop Price Predictor](ht
     - Split the data into training and testing sets to evaluate model performance.
 
 3. **Evaluation Metrics**:
-    - Used R-squared and Mean Absolute Error (MAE) to assess model accuracy.
+    - Used R-squared  to assess model accuracy.
     - Compared model performance to identify the best algorithm for price prediction.
 
 ### Results
@@ -48,12 +48,12 @@ You can find the deployed website through this link: [Laptop Price Predictor](ht
 - **Linear Regression**:
     - Achieved an accuracy of 79.7%.
     - R-squared: 0.797
-    - MAE: (calculated value)
+    
 
 - **XGBoost**:
     - Achieved an accuracy of 86.5%.
     - R-squared: 0.865
-    - MAE: (calculated value)
+  
 
 ### Conclusion
 
